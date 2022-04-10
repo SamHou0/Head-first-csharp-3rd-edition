@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="Build_from_scratch.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Build_from_scratch"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="38*"/>
+            <ColumnDefinition Width="37*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="71*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="button1" Content="Show a message" HorizontalAlignment="Center" Height="70" Width="179" Click="button1_Click"/>
+        <Button x:Name="button2" Content="if/else" Grid.Column="1" Height="71" Width="154" Click="button2_Click" HorizontalAlignment="Center"/>
+        <Button x:Name="button3" Content="Another conditional test" Margin="0,117,0,0" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Height="80" Width="179" Click="button3_Click"/>
+        <Button x:Name="button4" Content="A loop" Grid.Column="1" Margin="0,112,0,0" Grid.Row="1" VerticalAlignment="Top" Height="80" Width="154" Click="button4_Click" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="mylable" HorizontalAlignment="Left" Margin="662,159,0,0" Grid.Row="2" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="90" Width="201" Grid.ColumnSpan="2" Style="{StaticResource BodyTextBlockStyle}"/>
+
+    </Grid>
+</Page>
